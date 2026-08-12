@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agro é Pop, Agro é Tudo</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f4f7f2;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(rgba(0,100,0,.75),rgba(0,100,0,.75)),
+      url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1400&q=80');
+      background-size:cover;
+      background-position:center;
+      color:#fff;
+      text-align:center;
+      padding:80px 20px;
+    }
+
+    header h1{
+      font-size:3rem;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:1.3rem;
+    }
+
+    nav{
+      background:#2e7d32;
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      padding:15px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:.3s;
+    }
+
+    nav a:hover{
+      color:#ffd54f;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+      padding:40px 0;
+    }
+
+    .intro{
+      background:white;
+      padding:30px;
+      border-radius:10px;
+      margin-bottom:40px;
+      box-shadow:0 5px 15px rgba(0,0,0,.08);
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 5px 12px rgba(0,0,0,.08);
+      transition:.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card h3{
+      color:#2e7d32;
+      margin-bottom:10px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:15px;
+      padding:10px 20px;
+      background:#2e7d32;
+      color:white;
+      text-decoration:none;
+      border-radius:5px;
+    }
+
+    footer{
+      background:#1b5e20;
+      color:white;
+      text-align:center;
+      padding:30px;
+      margin-top:50px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+    <h1>🌱 Agro é Pop, Agro é Tudo!</h1>
+    <p>Informação, inovação e tecnologia para o agronegócio brasileiro.</p>
+</header>
+
+<nav>
+    <a href="#">Início</a>
+    <a href="#">Notícias</a>
+    <a href="#">Tecnologia</a>
+    <a href="#">Sustentabilidade</a>
+    <a href="#">Contato</a>
+</nav>
+
+<div class="container">
+
+    <section class="intro">
+        <h2>Bem-vindo ao Blog do Agro</h2>
+        <br>
+        <p>
+            O agronegócio é um dos principais motores da economia brasileira,
+            impulsionando inovação, geração de empregos e produção sustentável.
+            Nosso blog reúne notícias, dicas, tendências e conteúdos exclusivos
+            para produtores rurais, estudantes, técnicos e apaixonados pelo campo.
+        </p>
+
+        <br>
+
+        <p>
+            <strong>Agro é Pop, Agro é Tudo!</strong> Aqui você acompanha as
+            novidades sobre agricultura, pecuária, tecnologia no campo e práticas
+            sustentáveis que transformam o futuro do agronegócio.
+        </p>
+    </section>
+
+    <section class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=80" alt="Agricultura">
+            <div class="card-content">
+                <h3>Agricultura Inteligente</h3>
+                <p>
+                    Descubra como drones, sensores e inteligência artificial estão
+                    revolucionando a produção agrícola.
+                </p>
+                <a href="#" class="btn">Leia mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80" alt="Pecuária">
+            <div class="card-content">
+                <h3>Pecuária Moderna</h3>
+                <p>
+                    Conheça as melhores práticas para aumentar a produtividade e
+                    garantir o bem-estar animal.
+                </p>
+                <a href="#" class="btn">Leia mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Sustentabilidade">
+            <div class="card-content">
+                <h3>Sustentabilidade</h3>
+                <p>
+                    Produzir mais preservando os recursos naturais é o desafio do
+                    agro moderno. Saiba como aplicar boas práticas.
+                </p>
+                <a href="#" class="btn">Leia mais</a>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+    <h3>🌾 Blog Agro Brasil</h3>
+    <p>Agro é Pop • Agro é Tudo</p>
+    <br>
+    <p>&copy; 2026 - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
